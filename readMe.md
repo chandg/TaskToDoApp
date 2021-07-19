@@ -1,5 +1,7 @@
 User Detials application is built in with backend using SpringBoot and Client using Angular10.
 
+READ ToDoListApplicationDescription.pdf file for Project Description.
+
 Steps to Run application:
 
 BACKEND(SPRING BOOT APPLICATION):
