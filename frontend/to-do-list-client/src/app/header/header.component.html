@@ -6,9 +6,7 @@
         <li class = "nav-item">
             <a *ngIf="loginService.isUserLoggedIn()" routerLink="create-taskToDo" routerLinkActive="active" class="nav-link" >Add Task</a>
         </li>
-        <li class = "nav-item">
-            <a *ngIf="loginService.isUserLoggedIn()" routerLink="login" routerLinkActive="active" class="nav-link" >Login</a>
-        </li>
+  
         <li class = "nav-item">
             <a *ngIf="loginService.isUserLoggedIn()" routerLink="logout" routerLinkActive="active" class="nav-link" >Logout</a>
         </li>

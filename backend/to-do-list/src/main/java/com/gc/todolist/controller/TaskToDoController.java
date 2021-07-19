@@ -68,7 +68,6 @@ public class TaskToDoController {
 	 */
 	@PutMapping(path = "/taskToDoDetails")
 	public ResponseEntity<TaskToDo> updateUserDetils(@RequestBody TaskToDo taskToDo ) {
-		System.out.println(taskToDo);
 		TaskToDo taskToDoFromDB = repo.findById(taskToDo.getId()).orElseThrow(() -> new ResourceNotFoundException("User Details not found with ID "+ taskToDo.getId()));
 		taskToDoFromDB.setDescription(taskToDo.getDescription());
 		taskToDoFromDB.setModifiedDate(taskToDo.getModifiedDate());
