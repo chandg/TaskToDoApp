@@ -1,0 +1,29 @@
+<h1>Task To Do List</h1>
+<h3>Number Of Task : {{countToDoList}}</h3>
+<table class="table table-striped">
+    <thead><tr>
+                <th>Id</th>
+                <th>Description</th>
+                <th> Completed </th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Modified Date</th>
+                <th> Actions </th>
+              
+            </tr>
+    </thead>
+    <tbody><tr *ngFor= "let task of taskToDoList" >
+            <td>{{task.id}}</td>
+            <td>{{task.description}}</td>
+            <td>{{task.status}}</td>
+            <td>{{task.startDate}}</td>
+            <td>{{task.endDate}}</td>
+            <td>{{task.modifiedDate}}</td>
+            <td>
+                <button (click) = "updateTask(task.id)" class = "btn btn-info"> Update Task</button>
+                <button (click) = "deleteToDoTask(task.id)" class = "btn btn-danger" style="margin-left: 20px"> Delete User</button>  
+            </td>
+            </tr>
+    </tbody>
+</table> 
+
